@@ -7,12 +7,13 @@ public class leitor {
 
 	public static void main(String[] args) {
 		
-		String arq = "//home//bioinfo//Área de Trabalho//planilhaTeste.csv";
+		String arq = "//home//bioinfo//Área de Trabalho//dataset_2019_1.csv";
 		BufferedReader conteudo = null;
 		
 		String linha = "";
-		String c = ";";
+		String c = ",";
 		int i = 0;
+		// no momento ta lendo dataset na diagonal
 		try {
 			conteudo = new BufferedReader(new FileReader(arq));
 			while ((linha = conteudo.readLine())!= null) {
